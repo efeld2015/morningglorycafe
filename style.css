@@ -71,6 +71,13 @@ button:hover {
   opacity: 1;
 }
 
+.submit {
+  cursor: pointer;
+  background: #cc3f18;
+  border: outset 2px #468588;
+  color: white;
+  margin-top: 20px;
+}
 .nav-list li::before {
   content: "";
   z-index: 5;
@@ -137,44 +144,59 @@ article {
   margin: auto;
   padding: 1rem;
   background: #b9d39f;
-  box-shadow: 0 8px 8px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
 }
 
 .cater-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   width: 45rem;
   margin: auto;
   padding: 1rem;
   background: #eeaf42;
-  box-shadow: 0 8px 8px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
 }
 
+ .cater-container h3 {
+  text-align: center;
+}
+/*Parent element*/ 
 #order-form {
   width: 75%;
   padding: 40px;
   margin: 0 auto;
   margin-top: 20px;
   border-radius: 2%;
+  /*display: flex;
+  justify-content: flex-start;
+  width: 75%;
+  padding: 40px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 2%;
+  flex-wrap: wrap;*/
 }
 
+/* Formerly known as Bob, Bill, Chuck, Ted, Jim, and Rick */
+.form-input {
+display: flex;
+justify-content: center;
+width: 50%;
+margin-left: 100px;
+margin-bottom: 10px;
+}
 input {
   font-size: 16px;
-  display: flex;
-  justify-content: center;
   padding: 10px;
-  border: 2px solid rgba(0,0,0,0.25);
+  border: 2px solid rgba(0, 0, 0, 0.25);
   border-color: #8ca79a;
   border-radius: 5px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
 }
-.input-field {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+/*Is this needed anymore?*/.input-field {
 }
+
+
 .contact-container {
   display: flex;
   justify-content: center;
@@ -183,7 +205,7 @@ input {
   margin-bottom: 25px;
   padding: 1rem;
   background-color: #cc3f18;
-  box-shadow: 0 8px 8px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
 }
 
 .scroll-to-bottom {
@@ -210,4 +232,22 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* TOAST STYLING */
+
+.toast-container {
+  /* visibility: hidden; */
+
+  display: flex;
+  justify-content: center;
+}
+
+.toast {
+  padding: 15px 50px;
+  background-color: red;
+}
+
+.toast-show {
+  visibility: visible;
 }

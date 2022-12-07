@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,8 +15,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="./fancy.js" defer></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer></script> -->
     <title>Morning Glory's Cafe</title>
   </head>
 
@@ -93,10 +96,11 @@
       <main id="cater-content">
         <h2>CATER</h2>
         <div class="cater-container">
-          <h2>Catering Order Form</h2>
+          <h2 id="form-header">Catering Order Form</h2>
+         <h3>I. Contact Info</h3>
           <form id="order-form">
-            <div class="input-field">
-              <div class="bob">
+  
+              <div class="form-input">
                 <label id="name-label" for="name">First Name</label>
                 <input
                   type="text"
@@ -106,7 +110,7 @@
                   required
                 />
               </div>
-              <div class="bob">
+              <div class="form-input">
                 <label for="last-name">Last Name</label>
                 <input
                   type="text"
@@ -116,7 +120,7 @@
                   required
                 />
               </div>
-              <div class="bill">
+              <div class="form-input">
                 <label id="email-label" for="email">Email Address</label>
                 <input
                   type="text"
@@ -127,7 +131,7 @@
                 />
               </div>
 
-              <div class="ted">
+              <div class="form-input">
                 <label id="phone-number" for="phone">Phone Number</label>
 
                 <input
@@ -137,27 +141,53 @@
                   placeholder="Phone Number"
                   required
                 />
-
-                <div class="chuck">
+                </div>
+                
+                <div class="form-input">
                 <label id="event-address" for="event">Event Address</label>
                 <input type="text" id="address" class="form-control" placeholder="Event Address" required/>
                 </div>
 
-                <div class="ed">
+                <div class="form-input">
                 <label id="city-name" for="city">City</label>
                 <input type="text" id="city" class="form-control" placeholder="City" required/>
               </div>
 
-              <div class="jim">
+              <div class="form-input">
                 <label id="state" for="state">State</label>
                 <input type="text" id="home-state" class="form-control" placeholder="State" required/>
             </div>
 
-            <div class="rick">
+            <div class="form-input">
               <label id="zip" for="zip">Zip Code</label>
               <input type="text" id="zip-code" class="form-control" placeholder="Zip Code" required/>
               </div>
             
+              <h3>II. Tell us about your event</h3>
+              <input type="radio" name="event-radio" value="opt1"><label>Indoor</label>
+              <input type="radio" name="event-radio" value="opt2"><label>Outdoor</label>
+              <input type="radio" name="event-radio" value="opt3"><label>Indoor and Outdoor</label>
+              <p id="event-begin">Event begins at</p>
+              <select id="dropdown-begin">
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select>
+              <p id="event-end">Event ends at</p>
+              <select id="dropdown-end">
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select>
+              <h3>III. Select your catering package</h3>
+              <select id="dropdown-package">
+                <option>Reunion - 60 guests</option>
+                <option>Medium - 40 guests</option>
+                <option>Office Lunch - 20 guests</option>
+                <option>Game night - 8-10 guests</option>
+              </select>
+              <!-- Submit Button -->
+            <input type="submit" class="submit"></input>
             </div>
           </form>
         </div>
@@ -177,6 +207,13 @@
         </div>
       </main>
     </section>
+
+    <!-- pop-up/toast -->
+<div class="toast-container">
+  <div class="toast">
+    <p id="toast-text">test text</p>
+  </div>
+</div>
 
     <footer>
       <button class="back-to-top">
