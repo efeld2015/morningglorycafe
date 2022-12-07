@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cater Form page</title>
+    <link rel="index.html">
+    <link rel="stylesheet" type="text/css" href="cater.css">
+</head>
+
+<body>
+    <header>CATER</header>
+    <section id="cater">
+      <main id="cater-content">
+        <h2>CATER</h2>
+        <div class="cater-container">
+          <h2 id="form-header">Catering Order Form</h2>
+         <h3>I. Contact Info</h3>
+          <form id="order-form">
+  
+              <div class="form-input">
+                <label id="name-label" for="name">First Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="First"
+                  required
+                />
+              </div>
+              <div class="form-input">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  class="form-control"
+                  placeholder="Last"
+                  required
+                />
+              </div>
+              <div class="form-input">
+                <label id="email-label" for="email">Email Address</label>
+                <input
+                  type="text"
+                  id="email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+
+              <div class="form-input">
+                <label id="phone-number" for="phone">Phone Number</label>
+
+                <input
+                  type="text"
+                  id="phone"
+                  class="form-control"
+                  placeholder="Phone Number"
+                  required
+                />
+                </div>
+                
+                <div class="form-input">
+                <label id="event-address" for="event">Event Address</label>
+                <input type="text" id="address" class="form-control" placeholder="Event Address" required/>
+                </div>
+
+                <div class="form-input">
+                <label id="city-name" for="city">City</label>
+                <input type="text" id="city" class="form-control" placeholder="City" required/>
+              </div>
+
+              <div class="form-input">
+                <label id="state" for="state">State</label>
+                <input type="text" id="home-state" class="form-control" placeholder="State" required/>
+            </div>
+
+            <div class="form-input">
+              <label id="zip" for="zip">Zip Code</label>
+              <input type="text" id="zip-code" class="form-control" placeholder="Zip Code" required/>
+              </div>
+            
+              <h3>II. Tell us about your event</h3>
+              <input type="radio" name="event-radio" value="opt1"><label>Indoor</label>
+              <input type="radio" name="event-radio" value="opt2"><label>Outdoor</label>
+              <input type="radio" name="event-radio" value="opt3"><label>Indoor and Outdoor</label>
+              <p id="event-begin">Event begins at</p>
+              <select id="dropdown-begin">
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select>
+              <p id="event-end">Event ends at</p>
+              <select id="dropdown-end">
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select>
+              <h3>III. Select your catering package</h3>
+              <select id="dropdown-package">
+                <option>Reunion - 60 guests</option>
+                <option>Medium - 40 guests</option>
+                <option>Office Lunch - 20 guests</option>
+                <option>Game night - 8-10 guests</option>
+              </select>
+              <!-- Submit Button -->
+            <input type="submit" class="submit"></input>
+            </div>
+          </form>
+        </div>
+      </main>
+    </section>
+</body>
+</html>
