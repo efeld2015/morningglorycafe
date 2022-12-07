@@ -1,3 +1,39 @@
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  width: 45rem;
+  margin: auto;
+  padding: 1rem;
+  background: #b9d39f;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.cater-container {
+  display: flex;
+  flex-direction: column;
+  width: 45rem;
+  margin: auto;
+  padding: 1rem;
+  background: #eeaf42;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+ .cater-container h3 {
+  text-align: center;
+}
+
+.sandwich-package {
+  background: green;
+  width: 125px;
+
+}
+
+.soup-package {
+  background: red;
+  width: 125px;
+}
+
 /*Parent element*/ 
 #order-form {
     width: 75%;
